@@ -20,28 +20,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             GeminiBotTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    Text(
+                        modifier = Modifier.padding(innerPadding),
+                        text = "GEMINI BOT"
                     )
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    GeminiBotTheme {
-        Greeting("Android")
     }
 }
